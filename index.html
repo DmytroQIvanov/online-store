@@ -12,15 +12,16 @@
 
     <div class="nav-container">
         
-        <div class="logo"></div>
-        
+        <div class="logo">
+            <img class="menu" src="./assets/img/menu.png" onclick="showSide()"></div>
         <div class="logo">
             JoKeR
         </div>
         
         <div class="input-nav-block">
             <div>
-               <input class="input" placeholder=" Я ищу...">
+               <input class="input" id="Search" placeholder=" Я ищу...">
+               <button onclick="toSearch()" class="">Search</button>
             </div>
         </div>
 
@@ -36,21 +37,28 @@
             <div class="img-description">Корзина</div>    
         </div>
             <div>
-            <img src="./assets/img/kisspng-sucuri-web-application-firewall-angle-log-in-5b39333f77ce99.0290442815304753274907.png" class="basket">
+            <img src="./assets/img/kisspng-sucuri-web-application-firewall-angle-log-in-5b39333f77ce99.0290442815304753274907.png" class="basket" onclick="log()">
             <div class="img-description">Вход</div>
             </div>
             
         </div>
+
+        <img src="./assets/img/default_user.png" class="user-img" onclick="user()">
     </div>
 
 
-    <div class="gods-container">
-        <div class="god-block">
-            <div class="god-description">
-            
-            </div>
-        </div>
 
+
+
+     <!-- SIDE BAR -->
+    <div id="side-bar" class="side-bar">
+        <button onclick="goodsGenerate('Смартфоны')" class="button1">Smartphone</button><br>
+        <button onclick="goodsGenerate('Унитазы')" class="button1">Toilet Bowl</button>
+        
+    </div>
+
+    <div class="goods-container">
+       
     </div>
 
 

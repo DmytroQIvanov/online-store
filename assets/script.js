@@ -38,7 +38,13 @@ let goods = [
   },
 ];
 
-let basket = [];
+let basketArray = [];
+
+let nickName = document.getElementById("nick");
+
+let d = JSON.parse(localStorage.getItem("userData"));
+nickName.innerHTML = d.nick;
+
 let searchInput = document.getElementById("Search");
 searchInput.addEventListener("keypress", (key) => {
   key.key == "Enter" ? toSearch() : console.log(key.key);
@@ -124,6 +130,23 @@ function log() {
 
   document.querySelector(".goods-container").innerHTML = block;
 }
+function basket() {
+  let basketBlock = `<div class="good-page-container">
+  <div>Покупки: </div>
+`;
+
+  basketBlock += basketArray.map((elem) => {
+    let block = `
+  
+  <div>${elem.name}</div>
+
+  `;
+    return block;
+  });
+  basketBlock += `<button onclick="">Оформить</button>`;
+
+  document.querySelector(".goods-container").innerHTML = basketBlock;
+}
 
 function saveData() {
   let userData = {
@@ -144,5 +167,7 @@ function back() {
 goodsGenerate("all");
 
 function buy(id) {
-  alert("Тут уже прогорел");
+  basketArray.push({
+    name: goods[id].name,
+  });
 }

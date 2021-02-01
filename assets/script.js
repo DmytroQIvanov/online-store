@@ -43,7 +43,9 @@ let basketArray = [];
 let nickName = document.getElementById("nick");
 
 let d = JSON.parse(localStorage.getItem("userData"));
-nickName.innerHTML = d.nick;
+if (d != null) {
+  nickName.innerHTML = d.nick;
+}
 
 let searchInput = document.getElementById("Search");
 searchInput.addEventListener("keypress", (key) => {

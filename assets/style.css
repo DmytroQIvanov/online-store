@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 2.3vh;
+  background-color: rgb(237, 237, 237);
+}
+
+.nav-container {
+  display: grid;
+  box-shadow: 5px 3px 8px 2px rgb(181, 181, 181);
+
+  /* border: green solid 3px; */
+  height: 10vh;
+
+  grid-template-columns: 1fr 0.5fr 2.1fr 1.4fr 1fr;
+}
+.logo {
+  font-size: 6vh;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  line-height: 9vh;
+  display: block;
+
+  /* border: green solid 3px; */
+  margin-right: 1vh;
+  height: 10vh;
+}
+.input-nav-block {
+  display: grid;
+  /* border: green solid 3px; */
+}
+.input {
+  width: 99%;
+  height: 3.5vh;
+  margin-top: 2.8vh;
+}
+.img-container {
+  height: 10vh;
+  display: flex;
+  text-align: center;
+  /* border: black solid 3px; */
+}
+.img-block {
+  text-align: center;
+}
+.basket {
+  display: block;
+
+  /* border: solid black 2px; */
+  width: 6vh;
+  height: 6vh;
+
+  cursor: pointer;
+
+  margin: 0.8vh;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  margin-bottom: 0.1vh;
+
+  text-align: center;
+}
+.img-description {
+  margin-top: 0.5vh;
+  margin-left: 0.4vh;
+  float: inline-end;
+  /* border: solid black 2px; */
+}

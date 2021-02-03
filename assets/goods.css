@@ -1,0 +1,51 @@
+.goods-page-container {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-height: 80vh;
+  height: 100%;
+
+  box-shadow: 5px 3px 8px 5px rgb(181, 181, 181);
+
+  /* grid-template-columns: 1fr 2fr; */
+}
+.good-page-container {
+  position: relative;
+  width: 100%;
+  border: rgb(85, 85, 85) 1px solid;
+
+  box-shadow: 5px 3px 8px 5px rgb(181, 181, 181);
+}
+.good-page-img {
+  width: 15vh;
+  left: 1vh;
+  top: 1vh;
+}
+.good-page-name {
+  margin-left: 40vh;
+  font-size: 4vh;
+  font-weight: 800;
+}
+.good-page-description {
+  margin-left: 60vh;
+  font-size: 4vh;
+}
+.good-page-back {
+  position: absolute;
+  width: 15vh;
+  right: 0px;
+  cursor: pointer;
+  border-radius: 90px;
+  box-shadow: 5px 3px 8px 2px rgb(181, 181, 181);
+  transition-duration: 0.6s;
+}
+.good-page-back:hover {
+  right: 1vh;
+  width: 14vh;
+  box-shadow: 5px 5px 5px 2px rgb(181, 181, 181);
+}
+.good-page-price {
+  margin-left: 60vh;
+  font-size: 6vh;
+  color: rgb(109, 40, 40);
+}

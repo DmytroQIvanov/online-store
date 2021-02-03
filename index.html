@@ -5,67 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link rel="stylesheet" href="./assets/style.css"></link>
+    <link rel="stylesheet" href="./assets/goods.css"></link>
+    <!-- <link rel="stylesheet" href="./assets/style.css"></link> -->
 </head>
 <body>
 
-    <!-- TOP NAVIGATION PANEL -->
-
-    <div class="nav-container">
-        
-        <div class="logo">
-            <img class="menu" src="./assets/img/menu.png" onclick="showSide()">
-        </div>
-        <div class="logo">
-            JoKeR
-        </div>
-        
-        <div class="input-nav-block">
-            <div>
-               <input class="input" id="Search" placeholder=" Я ищу...">
-               <button onclick="toSearch()" class="">Search</button>
-            </div>
-        </div>
-
-        <!-- RIGHT IMG BLOCK -->
-
-        <div class="img-container">
-            <div class="img-block">
-            <img src="./assets/img/kisspng-silhouette-heart-clip-art-5b3c3be9452dd3.0273752815306741532834.png" class="basket"> 
-            <div class="img-description">Желаемое</div>
-            </div>
-            <div>
-            <img src="./assets/img/kisspng-basket-supermarket-computer-icons-online-shopping-cesta-5b11190c66eef7.3192873515278471804216.png" class="basket" onclick="basket()"> 
-            <div class="img-description">Корзина</div>    
-        </div>
-            <div>
-            <img src="./assets/img/kisspng-sucuri-web-application-firewall-angle-log-in-5b39333f77ce99.0290442815304753274907.png" class="basket" onclick="log()">
-            <div class="img-description">Вход</div>
-            </div>
-            
-        </div>
-
-        <div class="img-container">
-        <img src="./assets/img/default_user.png" class="user-img" onclick="user()">
-        <div id="nick"></div>
-        </div>
+<!-- TOP NAVIGATION PANEL -->
+<div class="nav-container">
+    <div class="logo">
+        <img class="menu" src="./assets/img/menu.png" onclick="showSide()">
     </div>
 
-
-
-
-     <!-- SIDE BAR -->
-    <div id="side-bar" class="side-bar">
-        <button onclick="goodsGenerate('Смартфоны')" class="button1">Smartphone</button><br>
-        <button onclick="goodsGenerate('Унитазы')" class="button1">Toilet Bowl</button>
-        
+    <div class="logo">
+        JoKeR
     </div>
-
-    <div class="goods-container">
-       
-    </div>
-
-
-    <script src="./assets/script.js"></script>
     
+    <div class="input-nav-block">
+        <div>
+            <input class="input" id="Search" placeholder=" Я ищу...">
+            <button onclick="toSearch()" class="">Search</button>
+        </div>
+    </div>
+
+    <!-- RIGHT IMG BLOCK -->
+    <div class="img-container">
+        <div class="img-block">
+        <img src="./assets/img/heart.png" class="basket"> 
+        <div class="img-description">Желаемое</div>
+        </div>
+        <div>
+        <img src="./assets/img/basket.png" class="basket" onclick="basket()"> 
+        <div class="img-description">Корзина</div>    
+    </div>
+        <div>
+        <img src="./assets/img/log.png" class="basket" onclick="log()">
+        <div class="img-description">Вход</div>
+        </div>
+    </div>
+
+    <div class="img-container">
+    <img src="./assets/img/default_user.png" class="user-img" onclick="user()">
+    
+    <div>
+        <div id="nick"></div>
+        <div id="email"></div>
+    </div>
+</div>
+</div>
+    <!-- SIDE BAR -->
+<div id="side-bar" class="side-bar">
+    <button onclick="goodsGenerate('all')" class="button1">All</button>
+    <button onclick="goodsGenerate('Смартфоны')" class="button1">Smartphone</button><br>
+    <button onclick="goodsGenerate('Унитазы')" class="button1">Toilet Bowl</button>
+</div>
+<button onclick="sortAscending()">Sort Ascending</button>
+<button onclick="sortDescending()">Sort Descending</button>
+
+
+<div class="goods-container"></div>
+
+<div class="bottom-bar">
+    <a href="https://www.instagram.com" class="link">Instagram</a>
+    <a href="https://instagram.com" class="link">Instagram</a>
+    <a href="https://instagram.com" class="link">Instagram</a>
+</div>
+<script src="./assets/goods.js"></script>
+<script src="./assets/script.js"></script>
+
 </body>
 </html>

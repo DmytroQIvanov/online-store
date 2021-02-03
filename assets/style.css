@@ -125,7 +125,11 @@
   width: 30vh;
   height: 52vh;
   border: rgb(102, 102, 102) solid 1px;
+
   /* overflow: hidden; */
+}
+.good-block.GOOD02 {
+  animation: pulse 0.3s;
 }
 .good-name {
   text-align: center;
@@ -177,49 +181,25 @@
   background-color: rgb(151, 40, 0);
 }
 /*======================================================================================*/
-.good-page-container {
-  position: relative;
-  display: grid;
+.bottom-bar {
+  display: none;
+  position: absolute;
   width: 100%;
-  min-height: 80vh;
-  height: 100%;
-
-  box-shadow: 5px 3px 8px 5px rgb(181, 181, 181);
-
-  /* grid-template-columns: 1fr 2fr; */
+  height: 15vh;
+  background-color: rgb(130, 122, 122);
+  bottom: 0px;
 }
-.good-page-img {
-  position: absolute;
-  width: 50vh;
-  left: 1vh;
-  top: 1vh;
-}
-.good-page-name {
-  margin-left: 60vh;
-  font-size: 8vh;
-  font-weight: 800;
-}
-.good-page-description {
-  margin-left: 60vh;
-  font-size: 4vh;
-}
-.good-page-back {
-  position: absolute;
-  width: 15vh;
-  right: 0px;
-  cursor: pointer;
-  border-radius: 90px;
-  box-shadow: 5px 3px 8px 2px rgb(181, 181, 181);
-  transition-duration: 0.6s;
-}
-.good-page-back:hover {
-  right: 1vh;
-  width: 14vh;
-  box-shadow: 5px 5px 5px 2px rgb(181, 181, 181);
-}
-.good-page-price {
-  margin-left: 60vh;
-  font-size: 6vh;
-  color: rgb(109, 40, 40);
+.link {
+  background-color: none;
+  text-decoration: none;
 }
 /*=====================================================*/
+
+@keyframes pulse {
+  0% {
+  }
+  100% {
+    transform: scale(0);
+    transform: rotate(360rog);
+  }
+}
